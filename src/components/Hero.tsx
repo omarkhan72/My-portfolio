@@ -132,7 +132,7 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             variants={containerVariants}
@@ -288,19 +288,19 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="flex flex-col items-center lg:items-end relative"
+            className="flex flex-col items-center lg:items-center relative"
           >
             <motion.div
               variants={floatingVariants}
               animate="animate"
               whileHover={{ scale: 1.02, y: -2 }}
-              className="w-[14rem] md:w-[17rem] rounded-3xl overflow-hidden p-3"
+              className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full overflow-hidden p-3 md:-translate-y-4"
               style={{ boxShadow: '20px 20px 40px var(--neu-shadow-dark), -20px -20px 40px var(--neu-shadow-light)', backgroundColor: 'var(--neu-bg)' }}
             >
               <img
                 src={profileImg}
                 alt="Omar Khan"
-                className="w-full h-auto rounded-2xl object-cover"
+                className="w-full h-full rounded-full object-cover"
                 style={{ boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)' }}
               />
             </motion.div>
