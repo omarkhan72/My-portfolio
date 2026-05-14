@@ -101,8 +101,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-block px-6 py-3 rounded-full text-sm font-semibold text-gray-600 mb-6"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: 'inset 4px 4px 8px #bec8d2, inset -4px -4px 8px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: 'inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light)'
             }}
           >
             Get In Touch
@@ -134,8 +134,8 @@ const Contact = () => {
               viewport={{ once: true }}
               className="block p-6 rounded-3xl text-center group"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <div 
@@ -163,8 +163,8 @@ const Contact = () => {
             viewport={{ once: true }}
             className="block p-6 rounded-3xl text-center group cursor-pointer"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
             }}
             onClick={() => {
               const link = document.createElement('a');
@@ -205,8 +205,8 @@ const Contact = () => {
             <div
               className="p-8 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <div className="flex items-center mb-8">
@@ -237,8 +237,8 @@ const Contact = () => {
                       onClick={() => handleQuickMessage(msg)}
                       className="p-3 text-left text-sm text-gray-600 rounded-xl transition-all duration-300"
                       style={{
-                        backgroundColor: '#d9dee7',
-                        boxShadow: '4px 4px 8px #bec8d2, -4px -4px 8px #ffffff'
+                        backgroundColor: 'var(--neu-bg)',
+                        boxShadow: '4px 4px 8px var(--neu-shadow-dark), -4px -4px 8px var(--neu-shadow-light)'
                       }}
                     >
                       {msg}
@@ -263,8 +263,8 @@ const Contact = () => {
                       required
                       className="w-full px-6 py-4 rounded-2xl text-gray-700 bg-transparent border-none outline-none transition-all duration-300"
                       style={{
-                        boxShadow: 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff',
-                        backgroundColor: '#e0e5ec'
+                        boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)',
+                        backgroundColor: 'var(--neu-bg)'
                       }}
                       placeholder="Your Name"
                     />
@@ -284,8 +284,8 @@ const Contact = () => {
                       required
                       className="w-full px-6 py-4 rounded-2xl text-gray-700 bg-transparent border-none outline-none transition-all duration-300"
                       style={{
-                        boxShadow: 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff',
-                        backgroundColor: '#e0e5ec'
+                        boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)',
+                        backgroundColor: 'var(--neu-bg)'
                       }}
                       placeholder="your.email@example.com"
                     />
@@ -306,8 +306,8 @@ const Contact = () => {
                     required
                     className="w-full px-6 py-4 rounded-2xl text-gray-700 bg-transparent border-none outline-none transition-all duration-300"
                     style={{
-                      boxShadow: 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff',
-                      backgroundColor: '#e0e5ec'
+                      boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)',
+                      backgroundColor: 'var(--neu-bg)'
                     }}
                     placeholder="Project Discussion"
                   />
@@ -327,8 +327,8 @@ const Contact = () => {
                     rows={6}
                     className="w-full px-6 py-4 rounded-2xl text-gray-700 bg-transparent border-none outline-none resize-none transition-all duration-300"
                     style={{
-                      boxShadow: 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff',
-                      backgroundColor: '#e0e5ec'
+                      boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)',
+                      backgroundColor: 'var(--neu-bg)'
                     }}
                     placeholder="Tell me about your project..."
                   />
@@ -380,8 +380,8 @@ const Contact = () => {
               whileHover={{ scale: 1.02, y: -5 }}
               className="p-8 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <div className="flex items-center mb-6">
@@ -407,8 +407,8 @@ const Contact = () => {
               whileHover={{ scale: 1.02, y: -5 }}
               className="p-8 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <h3 className="text-xl font-bold text-gray-700 mb-6">Connect With Me</h3>
@@ -420,8 +420,8 @@ const Contact = () => {
                     whileHover={{ scale: 1.05, x: 10 }}
                     className="flex items-center space-x-4 p-4 rounded-2xl transition-all duration-300"
                     style={{
-                      backgroundColor: '#d9dee7',
-                      boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                      backgroundColor: 'var(--neu-bg)',
+                      boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                     }}
                   >
                     <div 
@@ -447,8 +447,8 @@ const Contact = () => {
               whileHover={{ scale: 1.02, y: -5 }}
               className="p-8 rounded-3xl text-center"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <div className="text-4xl mb-4">☕</div>

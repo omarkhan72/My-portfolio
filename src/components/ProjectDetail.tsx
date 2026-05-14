@@ -22,13 +22,13 @@ const customStyles = `
   .swiper-pagination-bullet-custom {
     width: 14px !important;
     height: 14px !important;
-    background-color: #d9dee7 !important;
+    background-color: var(--neu-bg) !important;
     opacity: 1 !important;
     border-radius: 50% !important;
     margin: 0 6px !important;
     transition: all 0.4s ease !important;
-    box-shadow: inset 3px 3px 6px #bec8d2, inset -3px -3px 6px #ffffff !important;
-    border: 2px solid #e0e5ec !important;
+    box-shadow: inset 3px 3px 6px var(--neu-shadow-dark), inset -3px -3px 6px var(--neu-shadow-light) !important;
+    border: 2px solid var(--neu-bg) !important;
   }
   
   .swiper-pagination-bullet-active-custom {
@@ -45,13 +45,13 @@ const customStyles = `
   
   .swiper-button-prev-custom:hover,
   .swiper-button-next-custom:hover {
-    box-shadow: 12px 12px 24px #bec8d2, -12px -12px 24px #ffffff !important;
+    box-shadow: 12px 12px 24px var(--neu-shadow-dark), -12px -12px 24px var(--neu-shadow-light) !important;
     transform: scale(1.05) !important;
   }
   
   .swiper-button-prev-custom:active,
   .swiper-button-next-custom:active {
-    box-shadow: inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff !important;
+    box-shadow: inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light) !important;
     transform: scale(0.95) !important;
   }
   
@@ -119,8 +119,8 @@ const ProjectDetail = () => {
           onClick={() => navigate('/#projects')}
           className="flex items-center space-x-2 px-4 py-2 rounded-2xl text-gray-600 hover:text-gray-700 mb-8 transition-all duration-300"
           style={{
-            backgroundColor: '#e0e5ec',
-            boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+            backgroundColor: 'var(--neu-bg)',
+            boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
           }}
           whileHover={{ scale: 1.02, x: -5 }}
           whileTap={{ scale: 0.98 }}
@@ -172,8 +172,8 @@ const ProjectDetail = () => {
                 transition={{ delay: index * 0.1 }}
                 className="p-4 rounded-2xl text-center"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '8px 8px 16px #bec8d2, -8px -8px 16px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '8px 8px 16px var(--neu-shadow-dark), -8px -8px 16px var(--neu-shadow-light)'
                 }}
               >
                 <stat.icon size={24} className="text-gray-600 mx-auto mb-2" />
@@ -225,8 +225,8 @@ const ProjectDetail = () => {
                 whileTap={{ scale: 0.95 }}
                 className="swiper-button-prev-custom w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-gray-700 hover:text-gray-900 transition-all duration-300"
                   style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '8px 8px 16px #bec8d2, -8px -8px 16px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '8px 8px 16px var(--neu-shadow-dark), -8px -8px 16px var(--neu-shadow-light)'
                 }}
               >
                 <svg width="16" height="16" className="md:w-5 md:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -241,8 +241,8 @@ const ProjectDetail = () => {
                 whileTap={{ scale: 0.95 }}
                 className="swiper-button-next-custom w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-gray-700 hover:text-gray-900 transition-all duration-300"
                       style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '8px 8px 16px #bec8d2, -8px -8px 16px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '8px 8px 16px var(--neu-shadow-dark), -8px -8px 16px var(--neu-shadow-light)'
                       }}
                     >
                 <svg width="16" height="16" className="md:w-5 md:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -255,8 +255,8 @@ const ProjectDetail = () => {
             <div 
               className="relative p-8 rounded-3xl mx-auto"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff',
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)',
                 maxWidth: '1200px'
               }}
             >
@@ -355,8 +355,8 @@ const ProjectDetail = () => {
               transition={{ delay: 0.3 }}
               className="p-8 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <h2 className="text-2xl font-bold text-gray-700 mb-4">About This Project</h2>
@@ -370,8 +370,8 @@ const ProjectDetail = () => {
               transition={{ delay: 0.4 }}
               className="p-8 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
               }}
             >
               <h2 className="text-2xl font-bold text-gray-700 mb-6">Key Features</h2>
@@ -398,8 +398,8 @@ const ProjectDetail = () => {
               <div 
                 className="p-6 rounded-3xl"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                 }}
               >
                 <h3 className="text-xl font-bold text-gray-700 mb-4">Challenges</h3>
@@ -416,8 +416,8 @@ const ProjectDetail = () => {
               <div 
                 className="p-6 rounded-3xl"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                 }}
               >
                 <h3 className="text-xl font-bold text-gray-700 mb-4">Solutions</h3>
@@ -445,8 +445,8 @@ const ProjectDetail = () => {
               transition={{ delay: 0.6 }}
               className="p-6 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
               }}
             >
               <h3 className="text-xl font-bold text-gray-700 mb-4">Technologies</h3>
@@ -474,8 +474,8 @@ const ProjectDetail = () => {
               transition={{ delay: 0.7 }}
               className="p-6 rounded-3xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
               }}
             >
               <h3 className="text-xl font-bold text-gray-700 mb-4">Highlights</h3>

@@ -66,7 +66,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 px-4" style={{ backgroundColor: '#d9dee7' }}>
+    <section id="skills" className="py-20 px-4" style={{ backgroundColor: 'var(--neu-bg)' }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -100,8 +100,8 @@ const Skills = () => {
               variants={itemVariants}
               className="p-6 rounded-2xl"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '8px 8px 16px #bec8d2, -8px -8px 16px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '8px 8px 16px var(--neu-shadow-dark), -8px -8px 16px var(--neu-shadow-light)'
               }}
             >
               <h3 className="text-xl font-bold text-gray-700 mb-6 text-center">
@@ -122,8 +122,8 @@ const Skills = () => {
                     <div 
                       className="h-3 rounded-full overflow-hidden"
                       style={{
-                        boxShadow: 'inset 3px 3px 6px #bec8d2, inset -3px -3px 6px #ffffff',
-                        backgroundColor: '#d9dee7'
+                        boxShadow: 'inset 3px 3px 6px var(--neu-shadow-dark), inset -3px -3px 6px var(--neu-shadow-light)',
+                        backgroundColor: 'var(--neu-bg)'
                       }}
                     >
                       <motion.div

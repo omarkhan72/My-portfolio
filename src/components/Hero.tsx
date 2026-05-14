@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Copy, Download } from 'lucide-react';
+import profileImg from '../assets/images/Gemini_Generated_Image_kha3phkha3phkha3 (1).png';
 
 const Hero = () => {
   const containerVariants = {
@@ -75,8 +76,8 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-nouman-139779226/', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/nouman9589', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/omar-khan-0b45b52a1/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/OmarKhan2002', label: 'GitHub' },
   ];
 
   // Auto-changing inner text for code snippet
@@ -150,7 +151,7 @@ const Hero = () => {
               variants={nameVariants}
               className="text-5xl md:text-7xl font-bold text-gray-700 mb-6 leading-tight"
             >
-              Nouman Khan
+              Omar Khan
             </motion.h1>
 
             <motion.h2
@@ -195,10 +196,10 @@ const Hero = () => {
                 }}
                 className="px-8 py-4 text-gray-700 font-semibold rounded-2xl transition-all duration-300 border border-gray-300 relative overflow-hidden group"
                 style={{
-                  backgroundColor: '#e0e5ec'
+                  backgroundColor: 'var(--neu-bg)'
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLButtonElement).style.boxShadow = 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff';
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)';
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none';
@@ -251,14 +252,14 @@ const Hero = () => {
                   whileTap={{ scale: 0.9 }}
                   className="w-12 h-12 rounded-full flex items-center justify-center text-gray-600 transition-all duration-300 relative overflow-hidden group"
                   style={{
-                    backgroundColor: '#e0e5ec',
-                    boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                    backgroundColor: 'var(--neu-bg)',
+                    boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '3px 3px 6px #bec8d2, -3px -3px 6px #ffffff';
+                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '3px 3px 6px var(--neu-shadow-dark), -3px -3px 6px var(--neu-shadow-light)';
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff';
+                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)';
                   }}
                   aria-label={social.label}
                 >
@@ -293,78 +294,15 @@ const Hero = () => {
               variants={floatingVariants}
               animate="animate"
               whileHover={{ scale: 1.02, y: -2 }}
-              className="w-[22rem] md:w-[26rem] rounded-3xl overflow-hidden"
-              style={{ boxShadow: '20px 20px 40px #bec8d2, -20px -20px 40px #ffffff', backgroundColor: '#e0e5ec' }}
+              className="w-[14rem] md:w-[17rem] rounded-3xl overflow-hidden p-3"
+              style={{ boxShadow: '20px 20px 40px var(--neu-shadow-dark), -20px -20px 40px var(--neu-shadow-light)', backgroundColor: 'var(--neu-bg)' }}
             >
-              {/* Header */}
-              <div className="flex items-center justify-between px-4 py-3">
-                <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#ff5f56' }} />
-                  <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#ffbd2e' }} />
-                  <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#27c93f' }} />
-                  <span className="ml-3 text-xs text-gray-500">App.tsx</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  {/* Status LEDs */}
-                  <motion.span className="hidden md:inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#34d399' }} animate={{ opacity: [0.6, 1, 0.6] }} transition={{ duration: 2, repeat: Infinity }} />
-                  <motion.span className="hidden md:inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#fbbf24' }} animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 2.6, repeat: Infinity }} />
-                  <motion.span className="hidden md:inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#60a5fa' }} animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 3, repeat: Infinity }} />
-                  <button
-                    onClick={handleCopy}
-                    className="px-3 py-1.5 rounded-xl text-gray-600 text-xs flex items-center gap-1"
-                    style={{ backgroundColor: '#d9dee7', boxShadow: 'inset 2px 2px 4px #bec8d2, inset -2px -2px 4px #ffffff' }}
-                  >
-                    <Copy size={14} /> {copied ? 'Copied' : 'Copy'}
-                  </button>
-                </div>
-              </div>
-              {/* Code body */}
-              <div className="px-4 pb-4">
-                <div
-                  className="rounded-2xl p-4 text-sm font-mono leading-6 relative"
-                  style={{ backgroundColor: '#d9dee7', boxShadow: 'inset 6px 6px 12px #bec8d2, inset -6px -6px 12px #ffffff' }}
-                >
-                  {/* subtle pulse overlay */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl pointer-events-none"
-                    style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.08), rgba(0,0,0,0.04))' }}
-                    animate={{ opacity: [0.3, 0.5, 0.3] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                  />
-                  {/* glow sweep */}
-                  <motion.div
-                    className="absolute inset-y-0 w-1/3 -skew-x-12 pointer-events-none"
-                    style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent)' }}
-                    initial={{ x: '-120%' }}
-                    animate={{ x: ['-120%', '130%'] }}
-                    transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
-                  />
-
-                  <div className="relative z-10 text-gray-700">
-                    {codeLines.map((line, idx) => (
-                      <motion.div
-                        key={idx}
-                        initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 0.6 }}
-                        animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
-                        transition={{ duration: 0.6, delay: idx * 0.08, ease: 'easeInOut' }}
-                        className="whitespace-pre flex"
-                      >
-                        <span className="w-8 text-right pr-3 text-gray-500 select-none">{idx + 1}</span>
-                        <span className="flex-1">
-                          {line}
-                          {idx === codeLines.length - 1 && (
-                            <motion.span
-                              className="inline-block align-middle ml-1 w-0.5 h-4 bg-gray-600"
-                              animate={{ opacity: [1, 0, 1] }}
-                              transition={{ duration: 1, repeat: Infinity }}
-                            />
-                          )}
-                        </span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <img
+                src={profileImg}
+                alt="Omar Khan"
+                className="w-full h-auto rounded-2xl object-cover"
+                style={{ boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)' }}
+              />
             </motion.div>
 
             {/* CTA under editor */}

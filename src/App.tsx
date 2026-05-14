@@ -14,7 +14,7 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen" style={{ backgroundColor: '#e0e5ec' }}>
+      <div className="min-h-screen transition-colors duration-500" style={{ backgroundColor: 'var(--neu-bg)' }}>
         <Navbar />
         <motion.main
           initial={{ opacity: 0 }}

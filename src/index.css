@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --neu-bg: var(--neu-bg);
+  --neu-shadow-dark: #bec8d2;
+  --neu-shadow-light: #ffffff;
+}
+
+html.dark {
+  --neu-bg: #1f2937;
+  --neu-shadow-dark: #111827;
+  --neu-shadow-light: #374151;
+}
+
+body {
+  background-color: var(--neu-bg);
+  color: var(--text-primary, #374151);
+}
+
+html.dark body {
+  color: #f3f4f6;
+}
+
+/* Base tailwind dark mode colors */
+html.dark .text-gray-700 { color: #f3f4f6 !important; }
+html.dark .text-gray-600 { color: #d1d5db !important; }
+html.dark .text-gray-500 { color: #9ca3af !important; }
+
+
 /* Custom font styles */
 @layer base {
   html {
@@ -28,7 +56,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e0e5ec;
+  background: var(--neu-bg);
 }
 
 ::-webkit-scrollbar-thumb {

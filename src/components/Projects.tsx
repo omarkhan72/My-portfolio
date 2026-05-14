@@ -43,8 +43,8 @@ const Projects = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-block px-6 py-3 rounded-full text-sm font-semibold text-gray-600 mb-6"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: 'inset 4px 4px 8px #bec8d2, inset -4px -4px 8px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: 'inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light)'
             }}
           >
             My Work
@@ -81,8 +81,8 @@ const Projects = () => {
                 viewport={{ once: true }}
                 className="p-6 rounded-3xl text-center relative overflow-hidden group"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                 }}
               >
                 <motion.div
@@ -131,10 +131,10 @@ const Projects = () => {
                 style={{
                   background: filter === filterItem.id 
                     ? 'linear-gradient(135deg, #667eea, #764ba2)'
-                    : '#e0e5ec',
+                    : 'var(--neu-bg)',
                   boxShadow: filter === filterItem.id 
                     ? '0 10px 20px rgba(102, 126, 234, 0.3)'
-                    : '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                    : '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                 }}
               >
                 <span>{filterItem.label}</span>
@@ -162,8 +162,8 @@ const Projects = () => {
               <div 
                 className="p-6 rounded-3xl relative overflow-hidden h-[500px] flex flex-col"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
                 }}
               >
                 {/* Hover background effect */}
@@ -256,13 +256,13 @@ const Projects = () => {
                       {project.technologies.slice(0, 3).map((tech, idx) => (
                         <span 
                           key={idx}
-                          className="px-3 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-700"
+                          className="px-3 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
                         >
                           {tech}
                         </span>
                       ))}
                       {project.technologies.length > 3 && (
-                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-700">
+                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
                           +{project.technologies.length - 3}
                         </span>
                       )}
@@ -288,8 +288,8 @@ const Projects = () => {
                         href={project.github}
                         className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-600 hover:text-gray-700 transition-colors"
                         style={{
-                          backgroundColor: '#e0e5ec',
-                          boxShadow: '4px 4px 8px #bec8d2, -4px -4px 8px #ffffff'
+                          backgroundColor: 'var(--neu-bg)',
+                          boxShadow: '4px 4px 8px var(--neu-shadow-dark), -4px -4px 8px var(--neu-shadow-light)'
                         }}
                         onClick={(e) => e.stopPropagation()}
                       >

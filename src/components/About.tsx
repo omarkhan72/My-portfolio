@@ -72,8 +72,8 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-block px-6 py-3 rounded-full text-sm font-semibold text-gray-600 mb-6"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: 'inset 4px 4px 8px #bec8d2, inset -4px -4px 8px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: 'inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light)'
             }}
           >
             About Me
@@ -113,10 +113,10 @@ const About = () => {
                 style={{
                   background: activeTab === tab.id 
                     ? 'linear-gradient(135deg, #667eea, #764ba2)'
-                    : '#e0e5ec',
+                    : 'var(--neu-bg)',
                   boxShadow: activeTab === tab.id 
                     ? '0 10px 20px rgba(102, 126, 234, 0.3)'
-                    : '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                    : '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                 }}
               >
                 <tab.icon size={20} />
@@ -148,8 +148,8 @@ const About = () => {
                 whileHover={{ scale: 1.02, y: -5 }}
                 className="p-8 rounded-3xl"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
                 }}
               >
                 <div className="flex items-center mb-6">
@@ -189,8 +189,8 @@ const About = () => {
                       whileHover={{ scale: 1.02, y: -5 }}
                       className="p-6 rounded-3xl"
                       style={{
-                        backgroundColor: '#e0e5ec',
-                        boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                        backgroundColor: 'var(--neu-bg)',
+                        boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                       }}
                     >
                       <div className="flex items-center mb-4">
@@ -239,8 +239,8 @@ const About = () => {
                           }}
                           className="p-6 rounded-3xl text-center relative overflow-hidden group"
                           style={{
-                            backgroundColor: '#e0e5ec',
-                            boxShadow: '12px 12px 24px #bec8d2, -12px -12px 24px #ffffff'
+                            backgroundColor: 'var(--neu-bg)',
+                            boxShadow: '12px 12px 24px var(--neu-shadow-dark), -12px -12px 24px var(--neu-shadow-light)'
                           }}
                         >
                           {/* Floating background gradient */}
@@ -380,8 +380,8 @@ const About = () => {
                       whileHover={{ scale: 1.02, y: -5 }}
                       className="p-6 rounded-3xl relative overflow-hidden group"
                   style={{
-                    backgroundColor: '#e0e5ec',
-                        boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                    backgroundColor: 'var(--neu-bg)',
+                        boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                       }}
                     >
                       <motion.div
@@ -415,7 +415,7 @@ const About = () => {
                         <div 
                           className="w-full bg-gray-300 rounded-full h-3"
                           style={{
-                            boxShadow: 'inset 3px 3px 6px #bec8d2, inset -3px -3px 6px #ffffff'
+                            boxShadow: 'inset 3px 3px 6px var(--neu-shadow-dark), inset -3px -3px 6px var(--neu-shadow-light)'
                           }}
                         >
                           <motion.div
@@ -455,8 +455,8 @@ const About = () => {
                     transition={{ duration: 0.6 }}
                     className="p-8 rounded-3xl"
                     style={{
-                      backgroundColor: '#e0e5ec',
-                      boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                      backgroundColor: 'var(--neu-bg)',
+                      boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
                     }}
                   >
                     <div className="flex items-center mb-6">
@@ -501,8 +501,8 @@ const About = () => {
                   whileHover={{ scale: 1.05, y: -5 }}
                         className="p-6 rounded-2xl text-center relative overflow-hidden group"
                   style={{
-                    backgroundColor: '#e0e5ec',
-                    boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                    backgroundColor: 'var(--neu-bg)',
+                    boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
                   }}
                 >
                         <motion.div
@@ -544,8 +544,8 @@ const About = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="inline-block p-8 rounded-3xl"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
             }}
           >
             <h3 className="text-2xl font-bold text-gray-700 mb-4">Ready to work together?</h3>

@@ -94,7 +94,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-32 px-6" style={{ backgroundColor: '#d9dee7' }}>
+    <section id="experience" className="py-32 px-6" style={{ backgroundColor: 'var(--neu-bg)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -110,8 +110,8 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-block px-6 py-3 rounded-full text-sm font-semibold text-gray-600 mb-6"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: 'inset 4px 4px 8px #bec8d2, inset -4px -4px 8px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: 'inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light)'
             }}
           >
             Professional Journey
@@ -142,8 +142,8 @@ const Experience = () => {
               viewport={{ once: true }}
               className="text-center p-6 rounded-2xl relative overflow-hidden group"
               style={{
-                backgroundColor: '#e0e5ec',
-                boxShadow: '10px 10px 20px #bec8d2, -10px -10px 20px #ffffff'
+                backgroundColor: 'var(--neu-bg)',
+                boxShadow: '10px 10px 20px var(--neu-shadow-dark), -10px -10px 20px var(--neu-shadow-light)'
               }}
             >
               <motion.div
@@ -210,8 +210,8 @@ const Experience = () => {
                     whileHover={{ y: -8, scale: 1.02 }}
                     className="h-full p-8 rounded-3xl cursor-pointer relative overflow-hidden group"
                     style={{
-                      backgroundColor: '#e0e5ec',
-                      boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+                      backgroundColor: 'var(--neu-bg)',
+                      boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
                     }}
                     onClick={() => setSelectedExperience(selectedExperience === index ? null : index)}
                   >
@@ -268,8 +268,8 @@ const Experience = () => {
                     whileTap={{ scale: 0.9 }}
                     className="w-8 h-8 rounded-full flex items-center justify-center text-gray-600"
                     style={{
-                      backgroundColor: '#d9dee7',
-                      boxShadow: '4px 4px 8px #bec8d2, -4px -4px 8px #ffffff'
+                      backgroundColor: 'var(--neu-bg)',
+                      boxShadow: '4px 4px 8px var(--neu-shadow-dark), -4px -4px 8px var(--neu-shadow-light)'
                     }}
                   >
                     {selectedExperience === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -294,8 +294,8 @@ const Experience = () => {
                         viewport={{ once: true }}
                         className="px-3 py-1 text-xs font-medium text-gray-600 rounded-xl"
                         style={{
-                          backgroundColor: '#d9dee7',
-                          boxShadow: 'inset 2px 2px 4px #bec8d2, inset -2px -2px 4px #ffffff'
+                          backgroundColor: 'var(--neu-bg)',
+                          boxShadow: 'inset 2px 2px 4px var(--neu-shadow-dark), inset -2px -2px 4px var(--neu-shadow-light)'
                         }}
                       >
                         {skill}
@@ -359,8 +359,8 @@ const Experience = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="inline-block p-10 rounded-3xl relative overflow-hidden group"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
             }}
           >
             {/* Background Animation */}
@@ -413,8 +413,8 @@ const Experience = () => {
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                 className="px-8 py-4 text-gray-700 font-semibold rounded-2xl flex items-center justify-center space-x-2"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                 }}
               >
                 <span>View Projects</span>

@@ -41,14 +41,14 @@ const Footer = () => {
                 whileTap={{ scale: 0.9 }}
                 className="w-12 h-12 rounded-xl flex items-center justify-center text-gray-600 transition-all duration-300"
                 style={{
-                  backgroundColor: '#e0e5ec',
-                  boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+                  backgroundColor: 'var(--neu-bg)',
+                  boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '3px 3px 6px #bec8d2, -3px -3px 6px #ffffff';
+                  e.currentTarget.style.boxShadow = '3px 3px 6px var(--neu-shadow-dark), -3px -3px 6px var(--neu-shadow-light)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff';
+                  e.currentTarget.style.boxShadow = '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)';
                 }}
                 aria-label={social.label}
               >

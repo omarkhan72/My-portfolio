@@ -10,14 +10,14 @@ const NotFound = () => {
         transition={{ duration: 0.6 }}
         className="w-full max-w-3xl text-center rounded-3xl p-10 md:p-12"
         style={{
-          backgroundColor: '#e0e5ec',
-          boxShadow: '15px 15px 30px #bec8d2, -15px -15px 30px #ffffff'
+          backgroundColor: 'var(--neu-bg)',
+          boxShadow: '15px 15px 30px var(--neu-shadow-dark), -15px -15px 30px var(--neu-shadow-light)'
         }}
       >
         <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl mb-6" 
           style={{
-            backgroundColor: '#e0e5ec',
-            boxShadow: 'inset 8px 8px 16px #bec8d2, inset -8px -8px 16px #ffffff'
+            backgroundColor: 'var(--neu-bg)',
+            boxShadow: 'inset 8px 8px 16px var(--neu-shadow-dark), inset -8px -8px 16px var(--neu-shadow-light)'
           }}
         >
           <span className="text-4xl font-extrabold text-gray-600">404</span>
@@ -44,8 +44,8 @@ const NotFound = () => {
             href="#projects"
             className="px-6 py-3 rounded-2xl font-semibold text-gray-700"
             style={{
-              backgroundColor: '#e0e5ec',
-              boxShadow: '6px 6px 12px #bec8d2, -6px -6px 12px #ffffff'
+              backgroundColor: 'var(--neu-bg)',
+              boxShadow: '6px 6px 12px var(--neu-shadow-dark), -6px -6px 12px var(--neu-shadow-light)'
             }}
           >
             View Projects
