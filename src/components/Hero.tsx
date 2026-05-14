@@ -300,7 +300,7 @@ const Hero = () => {
               <img
                 src={profileImg}
                 alt="Omar Khan"
-                className="w-full h-full rounded-full object-cover"
+                className="w-full h-full rounded-full object-cover object-[center_30%]"
                 style={{ boxShadow: 'inset 6px 6px 12px var(--neu-shadow-dark), inset -6px -6px 12px var(--neu-shadow-light)' }}
               />
             </motion.div>
