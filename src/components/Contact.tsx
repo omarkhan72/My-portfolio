@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone,  Send, Check, Github, Linkedin, Twitter, MessageCircle, Calendar, Coffee } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import cvFile from '../assets/Pi7_Tool_Omar Zahid CV.pdf';
+import { Mail, Phone,  Send, Check, Github, Linkedin, Twitter, MessageCircle, Calendar, Coffee, Download } from 'lucide-react';
 import { SiWhatsapp, SiCalendly } from 'react-icons/si';
 
 const Contact = () => {
@@ -53,7 +54,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/nouman9589', label: 'GitHub', color: '#333', username: '@nouman9589' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-nouman-139779226/', label: 'LinkedIn', color: '#0077b5', username: 'Nouman Khan' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/omar-khan-0b45b52a1/', label: 'LinkedIn', color: '#0077b5', username: 'Omar Khan' },
     { icon: Twitter, href: '#', label: 'Twitter', color: '#1da1f2', username: '@nouman9589' },
   ];
 
@@ -168,8 +169,8 @@ const Contact = () => {
             }}
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Muhammad_Nouman_CV_Final_Clean.pdf';
-              link.download = 'Muhammad_Nouman_CV.pdf';
+              link.href = cvFile;
+              link.download = 'Omar_Khan_CV.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);

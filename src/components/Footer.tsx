@@ -9,7 +9,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/nouman9589', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-nouman-139779226/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/omar-khan-0b45b52a1/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:Nouman.khan9589282@gmail.com', label: 'Email' },
   ];
 

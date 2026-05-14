@@ -1,8 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Copy, Download } from 'lucide-react';
 import profileImg from '../assets/images/Gemini_Generated_Image_kha3phkha3phkha3 (1).png';
+import cvFile from '../assets/Pi7_Tool_Omar Zahid CV.pdf';
 
 const Hero = () => {
   const containerVariants = {
@@ -177,7 +177,7 @@ const Hero = () => {
 
             <motion.div
               variants={buttonVariants}
-              className="flex flex-col sm:flex-row gap-6 mb-12"
+              className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 mb-12"
             >
               <motion.button
                 whileHover={{
@@ -188,8 +188,8 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/Muhammad_Nouman_CV_Final_Clean.pdf';
-                  link.download = 'Muhammad_Nouman_CV.pdf';
+                  link.href = cvFile;
+                  link.download = 'Omar_Khan_CV.pdf';
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
@@ -232,6 +232,19 @@ const Hero = () => {
                 }}
               >
                 Contact Info
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 text-white font-semibold rounded-2xl transition-all duration-300"
+                style={{
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  boxShadow: '0 10px 20px rgba(102, 126, 234, 0.3)'
+                }}
+              >
+                View Projects
               </motion.button>
             </motion.div>
 
@@ -294,7 +307,7 @@ const Hero = () => {
               variants={floatingVariants}
               animate="animate"
               whileHover={{ scale: 1.02, y: -2 }}
-              className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full overflow-hidden p-3 md:-translate-y-4"
+              className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full overflow-hidden p-3 -translate-y-12 md:-translate-y-24"
               style={{ boxShadow: '20px 20px 40px var(--neu-shadow-dark), -20px -20px 40px var(--neu-shadow-light)', backgroundColor: 'var(--neu-bg)' }}
             >
               <img
@@ -305,21 +318,6 @@ const Hero = () => {
               />
             </motion.div>
 
-            {/* CTA under editor */}
-            <div className="mt-6">
-              <motion.button
-                whileHover={{ scale: 1.05, y: -3 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-7 py-3 text-white font-semibold rounded-2xl"
-                style={{
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                  boxShadow: '0 10px 20px rgba(102, 126, 234, 0.3)'
-                }}
-              >
-                View Projects
-              </motion.button>
-            </div>
           </motion.div>
         </div>
 

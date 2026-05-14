@@ -4,7 +4,7 @@
 
 
 :root {
-  --neu-bg: var(--neu-bg);
+  --neu-bg: #e0e5ec;
   --neu-shadow-dark: #bec8d2;
   --neu-shadow-light: #ffffff;
 }
@@ -32,7 +32,11 @@ html.dark .text-gray-500 { color: #9ca3af !important; }
 
 /* Custom font styles */
 @layer base {
-  html {
+  html, body {
+  overflow-x: hidden;
+}
+
+html {
     font-family: 'Quicksand', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   }
   
